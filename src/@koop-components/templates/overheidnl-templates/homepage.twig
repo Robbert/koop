@@ -1,0 +1,20 @@
+{% include '@koop-components/page-components/header/header.twig' with { metaLinks: headerContext.metaLinks } %}
+
+<div class="row row--page-opener">
+  <div class="container">
+    {% include '@koop-components/page-components/breadcrumb/breadcrumb.twig' %}
+  </div>
+</div>
+
+<div class="container row">
+
+  <div class="columns columns--homepage-tiles">
+    {% include '@koop-components/common/homepage-block/homepage-block.twig' with { modifier: 'bar', heading: homepageBlock1.heading, subtitle: homepageBlock1.subtitle, image: homepageBlock1.image } %}
+    {% include '@koop-components/common/homepage-block/homepage-block.twig' with { modifier: 'bar', heading: homepageBlock2.heading, subtitle: homepageBlock2.subtitle, image: homepageBlock2.image } %}
+    {% include '@koop-components/common/homepage-block/homepage-block.twig' with { modifier: 'bar', heading: homepageBlock3.heading, subtitle: homepageBlock3.subtitle, image: homepageBlock3.image } %}
+    {% include '@koop-components/common/homepage-block/homepage-block.twig' with { modifier: 'bar', heading: homepageBlock4.heading, subtitle: homepageBlock4.subtitle, image: homepageBlock4.image } %}
+  </div>
+
+</div>
+
+{% include '@koop-components/page-components/footer/footer.twig' %}

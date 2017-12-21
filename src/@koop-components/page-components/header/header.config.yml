@@ -13,7 +13,7 @@ context:
     - title: Verdragenbank
       description: De Verdragenbank bevat de gegevens van de verdragen waarbij het Koninkrijk der Nederlanden partij is. Er is ook een Engelse versie.
       links:
-        - url: '#'
+        - url: '/verdragenbank'
           text: Verdragenbank
     - title: Verdragenbank over twee regels
       description: De Verdragenbank bevat de gegevens van de verdragen waarbij het Koninkrijk der Nederlanden partij is. Er is ook een Engelse versie.
@@ -25,9 +25,9 @@ context:
       links:
         - url: '#'
           text: Verdragenbank
-    - title: Verdragenbank over twee regels
+    - title: Verdragenbank over drie regels
       description: De Verdragenbank bevat de gegevens van de verdragen waarbij het Koninkrijk der Nederlanden partij is. Er is ook een Engelse versie.
       links:
         - url: '#'
-          text: Verdragenbank
+          text: Verdragenbank verder
 

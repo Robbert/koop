@@ -1,0 +1,51 @@
+  <div class="homepageblock {{ modifier }} {{ color }}" style="background-image: url({{ image }});">
+
+    <div class="content--inner">
+
+      <h2>{{ heading }}</h2>
+
+      {% if subtitle %}
+        <span>{{ subtitle }}</span>
+      {% endif %}
+
+      {% if items %}
+        <ul>
+          {% for item in items %}
+            <li>
+              {% if item.url %}
+              <a href="{{ item.url }}">
+              {% endif %}
+              {{ item.text }}
+              {% if item.subItems %}
+              {% for subItem in item.subItems %}
+              <ul>
+                <li>
+                  {% if subItem.url %}
+                  <a href="{{ subItem.url }}">
+                  {% endif %}
+                  {{ subItem.text }}
+                  {% if subItem.url %}
+                  </a>
+                  {% endif %}
+              </ul>
+              {% endfor %}
+              {% endif %}
+              {% if item.url %}
+              </a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if contextLinkText %}
+        <a href="{{ contextLink }}" class="context-Link">{{ contextLinkText }}</a>
+      {% endif %}
+
+      {% if content %}
+        {{ content }}
+      {% endif %}
+
+    </div>
+
+  </div>
